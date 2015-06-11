@@ -31,8 +31,8 @@ h1, h2
 p
   margin: 20px 0
 .logo
-  padding: 10px
-  max-height: 100px
+  max-height: 80px
+  margin-left: 5px
 .links
   margin-top: 40px
   a
@@ -46,7 +46,7 @@ footer
   li
     margin: 5px 0
 #main
-  height: 500px
+  height: 650px
   @media (min-width: 768px)
     background: url("../cover.jpg") no-repeat center center fixed
     -webkit-background-size: cover
@@ -54,22 +54,31 @@ footer
     -o-background-size: cover
     background-size: cover
 #main h1
-  font-size: 40px
+  font-size: 35px
   font-weight: 200
   color: white
   text-align: center
   background-color: rgba(0,0,0, 0.7)
-  margin-top: 100px
+  margin-top: 0
+  margin-bottom: 0
   padding: 10px 0
   @media (min-width: 768px)
-  font-size: 65px
+    font-size: 76px
+    margin-top: 100px
 .btn-white
-  color: #ffffff
   border: 2px solid
-  background: rgba(0,0,0, 0.3)
+  background-color: rgba(255,255,255, 0.7)
   font-weight: 600
-  margin: 150px 0
+  margin: 20px 0
   min-width: 200px
+  @media (min-width: 768px)
+    margin: 150px 0
+    background: rgba(0,0,0, 0.3)
+    color: #ffffff
+.buttons-header
+  margin: 80px 0
+  @media (min-width: 768px)
+    margin: 0
 .btn-white:hover
   background-color: rgba(255,255,255, 0.7)
 h2
@@ -112,10 +121,13 @@ blockquote
 #map-canvas 
   width: 100%
   height: 450px
-  border: 0
-  margin-bottom: 50px
-.footer-bits
-  margin-top: 16px
+  padding: 20px
+  margin-top: 0
+  @media (min-width: 768px)
+    margin-bottom: 45px
+    padding: 0
+    border: 0
+
 .btn-black
   color: #000000
   border: 2px solid
@@ -127,3 +139,14 @@ blockquote
   color: rgba(0,0,0, 0.7)
 .navbar
   margin: 0
+  height: 100px
+.image-xs
+  position: absolute
+.btn-z
+  z-index: 99
+  position: relative
+.logo-text
+  font-size: 40px
+  font-family: $headline
+.footer-bits
+  margin-top: 16px
