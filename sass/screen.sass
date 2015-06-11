@@ -46,19 +46,23 @@ footer
   li
     margin: 5px 0
 #main
-  background: url("../cover.jpg") no-repeat center center fixed
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-  h1
-    font-size: 65px
-    font-weight: 200
-    color: white
-    text-align: center
-    background-color: rgba(0,0,0, 0.7)
-    margin-top: 100px
-    padding: 10px 0
+  height: 500px
+  @media (min-width: 768px)
+    background: url("../cover.jpg") no-repeat center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+#main h1
+  font-size: 40px
+  font-weight: 200
+  color: white
+  text-align: center
+  background-color: rgba(0,0,0, 0.7)
+  margin-top: 100px
+  padding: 10px 0
+  @media (min-width: 768px)
+  font-size: 65px
 .btn-white
   color: #ffffff
   border: 2px solid
@@ -121,6 +125,5 @@ blockquote
 .btn-black:hover
   background-color: rgba(0,0,0, 0.1)
   color: rgba(0,0,0, 0.7)
-.navbar .nav.pull-right
-  float: right
-  margin-right: 98px
+.navbar
+  margin: 0
