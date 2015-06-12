@@ -6,7 +6,10 @@ body {
 #header {
   margin: 0;
   padding: 0; }
-  #header h3 {
+
+.headline-main {
+  padding: 0; }
+  .headline-main h3 {
     margin-top: 35px;
     font-family: "Roboto Slab", serif;
     font-weight: 600;
@@ -43,13 +46,15 @@ ul {
 footer li {
   margin: 5px 0; }
 
-@media (min-width: 768px) {
-  #main {
-    background: url("../cover.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; } }
+#main {
+  padding: 0; }
+  @media (min-width: 768px) {
+    #main {
+      background: url("../cover.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
 
 #main h1 {
   font-size: 35px;
@@ -78,7 +83,7 @@ footer li {
       color: #ffffff; } }
 
 .buttons-header {
-  margin: 80px 0; }
+  margin-top: 20px; }
   @media (min-width: 768px) {
     .buttons-header {
       margin: 0; } }
@@ -103,7 +108,7 @@ article img {
   padding: 20px;
   border: 25px solid white;
   margin: 20px 0;
-  height: 500px; }
+  max-height: 550px; }
   .gray-card h2 {
     margin-top: 10px; }
 
@@ -166,11 +171,12 @@ blockquote {
     display: none; } }
 @media (max-width: 768px) {
   .image-xs {
-    position: absolute; } }
-
-.btn-z {
-  z-index: 99;
-  position: relative; }
+    background: url("../cover-xs.jpg") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px; } }
 
 .logo-text {
   font-size: 40px;

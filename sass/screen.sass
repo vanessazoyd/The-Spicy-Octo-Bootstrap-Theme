@@ -16,6 +16,8 @@ body
 #header
   margin: 0
   padding: 0
+.headline-main
+  padding: 0
   h3
     margin-top: 35px
     font-family: $headline
@@ -47,6 +49,7 @@ footer
   li
     margin: 5px 0
 #main
+  padding: 0
   @media (min-width: 768px)
     background: url("../cover.jpg") no-repeat center center fixed
     -webkit-background-size: cover
@@ -76,7 +79,7 @@ footer
     background: rgba(0,0,0, 0.3)
     color: #ffffff
 .buttons-header
-  margin: 80px 0
+  margin-top: 20px
   @media (min-width: 768px)
     margin: 0
 .btn-white:hover
@@ -95,7 +98,7 @@ article img
   padding: 20px
   border: 25px solid white
   margin: 20px 0
-  height: 500px
+  max-height: 550px
   h2
     margin-top: 10px
 blockquote
@@ -147,10 +150,12 @@ blockquote
   @media (max-width: 588px)
     display: none
   @media (max-width: 768px)
-    position: absolute
-.btn-z
-  z-index: 99
-  position: relative
+    background: url("../cover-xs.jpg") no-repeat fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    height: 300px
 .logo-text
   font-size: 40px
   font-family: $headline
