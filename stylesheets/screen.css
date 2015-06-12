@@ -198,4 +198,7 @@ footer address {
   padding: 5px;
   opacity: 0.8; }
 
+#header .navbar .collapsed {
+  color: black; }
+
 /*# sourceMappingURL=screen.css.map */
