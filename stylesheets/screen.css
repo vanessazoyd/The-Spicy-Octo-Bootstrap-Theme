@@ -22,7 +22,8 @@ h1, h2 {
   font-weight: bold; }
 
 p {
-  margin: 20px 0; }
+  margin: 20px 0;
+  padding: 0 30px; }
 
 .logo {
   max-height: 80px;
@@ -42,15 +43,13 @@ ul {
 footer li {
   margin: 5px 0; }
 
-#main {
-  height: 650px; }
-  @media (min-width: 768px) {
-    #main {
-      background: url("../cover.jpg") no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; } }
+@media (min-width: 768px) {
+  #main {
+    background: url("../cover.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
 
 #main h1 {
   font-size: 35px;
@@ -124,6 +123,11 @@ blockquote {
   background-size: cover;
   height: 300px; }
 
+.staff {
+  margin-bottom: 20px; }
+  .staff h4 {
+    margin-bottom: 0; }
+
 #icons span {
   font-size: 50px;
   margin-bottom: 20px; }
@@ -157,8 +161,12 @@ blockquote {
   margin: 0;
   height: 100px; }
 
-.image-xs {
-  position: absolute; }
+@media (max-width: 588px) {
+  .image-xs {
+    display: none; } }
+@media (max-width: 768px) {
+  .image-xs {
+    position: absolute; } }
 
 .btn-z {
   z-index: 99;
@@ -170,5 +178,18 @@ blockquote {
 
 .footer-bits {
   margin-top: 16px; }
+
+footer address {
+  margin-left: 20px; }
+
+.button-footer {
+  margin-bottom: 42px;
+  padding: 0; }
+
+.footer-social li {
+  font-size: 45px;
+  display: inline-block;
+  padding: 5px;
+  opacity: 0.8; }
 
 /*# sourceMappingURL=screen.css.map */
