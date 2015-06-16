@@ -61,7 +61,7 @@ blockquote {
   width: 100%; }
   @media (min-width: 768px) {
     #main {
-      background: url("../cover.jpg") no-repeat center center fixed;
+      background: url("../images/cover.jpg") no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -140,7 +140,7 @@ blockquote {
     margin-top: 10px; }
 
 .photo-block {
-  background: url("../food-1.jpg") no-repeat center center fixed;
+  background: url("../images/food-1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -168,7 +168,7 @@ blockquote {
     display: none; } }
 @media (max-width: 768px) {
   .image-xs {
-    background: url("../cover-xs.jpg") no-repeat fixed;
+    background: url("../images/cover-xs.jpg") no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
