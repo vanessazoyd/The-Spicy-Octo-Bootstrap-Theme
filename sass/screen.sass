@@ -1,28 +1,16 @@
-$green: #B7FF67
-$pink: #BA6863
-
 $border-radius: 10px
 $headline: 'Roboto Slab', serif
 
-
-
-
-
+html
+  padding: 0
+  margin: 0
+  width: 100%
 
 body
   margin: 0
   padding: 0
   font-family: 'Lato', sans-serif
-#header
-  margin: 0
-  padding: 0
-.headline-main
-  padding: 0
-  h3
-    margin-top: 35px
-    font-family: $headline
-    font-weight: 600
-    margin-left: 20px
+
 a, a:hover,
   text-decoration: none
   color: black
@@ -33,23 +21,42 @@ h1, h2
 p
   margin: 20px 0
   padding: 0 30px
-.logo
-  max-height: 80px
-  margin-left: 5px
-.links
-  margin-top: 40px
-  a
-    padding: 0 10px
 ul
   padding: 0
   margin-top: 15px
   list-style-type: none
   font-weight: bold
-footer
-  li
-    margin: 5px 0
+h2
+  border-bottom: 5px solid rgba(192,192,192, 0.5)
+  outline-offset: 30px
+article img
+  max-width: 150px
+  min-height: 150px
+blockquote
+  font-size: 20px
+  margin-top: 30px
+  border: 0
+
+
+
+// navbar
+.logo
+  max-height: 80px
+  margin-left: 5px
+.navbar-toggle .icon-bar
+  background-color: black
+.links
+  margin-top: 40px
+  a
+    padding: 0 10px
+.navbar
+  margin: 0
+  height: 100px
+
+// main
 #main
   padding: 0
+  width: 100%
   @media (min-width: 768px)
     background: url("../cover.jpg") no-repeat center center fixed
     -webkit-background-size: cover
@@ -68,6 +75,18 @@ footer
   @media (min-width: 768px)
     font-size: 76px
     margin-top: 100px
+#header
+  margin: 0
+  padding: 0
+.headline-main
+  padding: 0
+  h3
+    margin-top: 35px
+    font-family: $headline
+    font-weight: 600
+    margin-left: 20px
+
+// buttons
 .btn-white
   border: 2px solid
   background-color: rgba(255,255,255, 0.7)
@@ -84,12 +103,17 @@ footer
     margin: 0
 .btn-white:hover
   background-color: rgba(255,255,255, 0.7)
-h2
-  border-bottom: 5px solid rgba(192,192,192, 0.5)
-  outline-offset: 30px
-article img
-  max-width: 150px
-  min-height: 150px
+.btn-black
+  color: #000000
+  border: 2px solid
+  background-color: rgba(255,255,255, 0.7)
+  font-weight: 600
+  min-width: 200px
+.btn-black:hover
+  background-color: rgba(0,0,0, 0.1)
+  color: rgba(0,0,0, 0.7)
+
+// cards
 .cards
   margin: auto 30px
 .gray-card
@@ -99,15 +123,11 @@ article img
   border: 25px solid white
   margin: 20px 0
   max-height: 550px
+  min-height: 550px
   h2
     margin-top: 10px
-blockquote
-  font-size: 20px
-  margin-top: 30px
-  border: 0
-#quote
-  footer
-    background-color: none
+
+// staff photos
 .photo-block
   background: url("../food-1.jpg") no-repeat center center fixed
   -webkit-background-size: cover
@@ -119,11 +139,9 @@ blockquote
   margin-bottom: 20px
   h4
     margin-bottom: 0
-#icons span
-  font-size: 50px
-  margin-bottom: 20px
-#end footer
-  background-color: rgba(0,0,0, 0.1)
+
+
+// google map
 #map-canvas 
   width: 100%
   height: 450px
@@ -134,18 +152,8 @@ blockquote
     padding: 0
     border: 0
 
-.btn-black
-  color: #000000
-  border: 2px solid
-  background-color: rgba(255,255,255, 0.7)
-  font-weight: 600
-  min-width: 200px
-.btn-black:hover
-  background-color: rgba(0,0,0, 0.1)
-  color: rgba(0,0,0, 0.7)
-.navbar
-  margin: 0
-  height: 100px
+
+// hidden photo on small sizes
 .image-xs
   @media (max-width: 588px)
     display: none
@@ -156,9 +164,9 @@ blockquote
     -o-background-size: cover
     background-size: cover
     height: 300px
-.logo-text
-  font-size: 40px
-  font-family: $headline
+
+
+// footer
 .footer-bits
   margin-top: 16px
 footer address
@@ -172,5 +180,11 @@ footer address
     display: inline-block
     padding: 5px
     opacity: 0.8
-#header .navbar .collapsed
-  color: black
+#end footer
+  background-color: rgba(0,0,0, 0.1)
+footer
+  li
+    margin: 5px 0
+#quote
+  footer
+    background-color: none
