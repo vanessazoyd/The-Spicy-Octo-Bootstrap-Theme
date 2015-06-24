@@ -1,5 +1,30 @@
-$border-radius: 10px
+$border-radius-cards: 10px
 $headline: 'Roboto Slab', serif
+
+////////////colors
+
+$white: #ffffff
+$black: #000000
+
+///////tints
+
+//headlines
+
+$headline-underline-color: rgba(192,192,192, 0.5)
+$headline-background-color: rgba(0,0,0, 0.7)
+
+//buttons
+
+$button-background-color-light: rgba(255,255,255, 0.7)
+$button-background-color-dark: rgba(0,0,0, 0.1)
+
+//cards
+
+$background-color-cards: rgba(0,0,0, 0.1)
+
+//footer
+
+$background-color-footer: rgba(0,0,0, 0.1)
 
 html
   padding: 0
@@ -13,25 +38,31 @@ body
 
 a, a:hover,
   text-decoration: none
-  color: black
+  color: $black
+
 h1, h2
   font-family: $headline
   margin: 50px 0
   font-weight: bold
+
 p
   margin: 20px 0
   padding: 0 30px
+
 ul
   padding: 0
   margin-top: 15px
   list-style-type: none
   font-weight: bold
+
 h2
-  border-bottom: 5px solid rgba(192,192,192, 0.5)
+  border-bottom: 5px solid $headline-underline-color
   outline-offset: 30px
+
 article img
   max-width: 150px
   min-height: 150px
+
 blockquote
   font-size: 20px
   margin-top: 30px
@@ -40,20 +71,25 @@ blockquote
 
 
 // navbar
+
 .logo
   max-height: 80px
   margin-left: 5px
+
 .navbar-toggle .icon-bar
-  background-color: black
+  background-color: $black
+
 .links
   margin-top: 40px
   a
     padding: 0 10px
+
 .navbar
   margin: 0
   height: 100px
 
 // main
+
 #main
   padding: 0
   width: 100%
@@ -63,21 +99,24 @@ blockquote
     -moz-background-size: cover
     -o-background-size: cover
     background-size: cover
+
 #main h1
   font-size: 35px
   font-weight: 200
-  color: white
+  color: $white
   text-align: center
-  background-color: rgba(0,0,0, 0.7)
+  background-color: $headline-background-color
   margin-top: 0
   margin-bottom: 0
   padding: 10px 0
   @media (min-width: 768px)
     font-size: 76px
     margin-top: 100px
+
 #header
   margin: 0
   padding: 0
+
 .headline-main
   padding: 0
   h3
@@ -87,38 +126,45 @@ blockquote
     margin-left: 20px
 
 // buttons
+
 .btn-white
   border: 2px solid
-  background-color: rgba(255,255,255, 0.7)
+  background-color: $button-background-color-light
   font-weight: 600
   margin: 20px 0
   min-width: 200px
   @media (min-width: 768px)
     margin: 150px 0
     background: rgba(0,0,0, 0.3)
-    color: #ffffff
+    color: $white
+
 .buttons-header
   margin-top: 20px
   @media (min-width: 768px)
     margin: 0
+
 .btn-white:hover
-  background-color: rgba(255,255,255, 0.7)
+  background-color: $button-background-color-light
+
 .btn-black
-  color: #000000
+  color: $black
   border: 2px solid
-  background-color: rgba(255,255,255, 0.7)
+  background-color: $button-background-color-light
   font-weight: 600
   min-width: 200px
+
 .btn-black:hover
-  background-color: rgba(0,0,0, 0.1)
+  background-color: $button-background-color-dark
   color: rgba(0,0,0, 0.7)
 
 // cards
+
 .cards
   margin: auto 30px
+
 .gray-card
-  background-color: rgba(0,0,0, 0.1)
-  border-radius: $border-radius
+  background-color: $background-color-cards
+  border-radius: $border-radius-cards
   padding: 20px
   border: 25px solid white
   margin: 20px 0
@@ -128,6 +174,7 @@ blockquote
     margin-top: 10px
 
 // staff photos
+
 .photo-block
   background: url("../images/food-1.jpg") no-repeat center center fixed
   -webkit-background-size: cover
@@ -135,6 +182,7 @@ blockquote
   -o-background-size: cover
   background-size: cover
   height: 300px
+
 .staff
   margin-bottom: 20px
   h4
@@ -142,6 +190,7 @@ blockquote
 
 
 // google map
+
 #map-canvas 
   width: 100%
   height: 450px
@@ -154,6 +203,7 @@ blockquote
 
 
 // hidden photo on small sizes
+
 .image-xs
   @media (max-width: 588px)
     display: none
@@ -167,24 +217,30 @@ blockquote
 
 
 // footer
+
 .footer-bits
   margin-top: 16px
+
 footer address
   margin-left: 20px
+
 .button-footer
   margin-bottom: 42px
   padding: 0
+
 .footer-social
   li
     font-size: 45px
     display: inline-block
     padding: 5px
     opacity: 0.8
+
 #end footer
-  background-color: rgba(0,0,0, 0.1)
+  background-color: $background-color-footer
 footer
   li
     margin: 5px 0
+
 #quote
   footer
     background-color: none

@@ -10,7 +10,7 @@ body {
 
 a, a:hover {
   text-decoration: none;
-  color: black; }
+  color: #000000; }
 
 h1, h2 {
   font-family: "Roboto Slab", serif;
@@ -45,7 +45,7 @@ blockquote {
   margin-left: 5px; }
 
 .navbar-toggle .icon-bar {
-  background-color: black; }
+  background-color: #000000; }
 
 .links {
   margin-top: 40px; }
@@ -70,7 +70,7 @@ blockquote {
 #main h1 {
   font-size: 35px;
   font-weight: 200;
-  color: white;
+  color: #ffffff;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
   margin-top: 0;
