@@ -1,202 +1,380 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Roboto:300,700,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="fonts/font-awesome.min.scss">
-  <link href="stylesheets/bootstrap.css" rel="stylesheet">
-  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href=
+    'http://fonts.googleapis.com/css?family=Roboto+Slab:300,700|Roboto:300,700,400'
+    rel='stylesheet' type='text/css'>
+    <link href="fonts/font-awesome.min.scss" rel="stylesheet">
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/screen.css" media="screen, projection" rel=
+    "stylesheet" type="text/css">
+
+    <title>
+    </title>
 </head>
 
-  <body>
+<body>
     <div class="container-fluid" id="header">
-      <nav class="navbar navbar-static-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img class="logo" src="images/octo-logo.png" alt="logo"/>
-            </a>
-          </div>
+        <nav class="navbar navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-target=
+                    "#bs-example-navbar-collapse-1" data-toggle="collapse"
+                    type="button"><span class="sr-only">Toggle
+                    navigation</span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> <span class=
+                    "icon-bar"></span></button> <a class="navbar-brand" href=
+                    "#"><img alt="logo" class="logo" src=
+                    "images/octo-logo.png"></a>
+                </div>
 
-          <div class="collapse navbar-collapse pull-right text-right" id="bs-example-navbar-collapse-1"> 
-            <ul class="nav navbar-nav links">
-              <li><a href="#">Daily menu</a></li>
-              <li><a href="#">Work for us</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+
+                <div class="collapse navbar-collapse pull-right text-right" id=
+                "bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav links">
+                        <li>
+                            <a href="#">Daily menu</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Work for us</a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="main">
+            <div class="row">
+                <div class="col-lg-12 headline-main hidden-xs">
+                    <h1>Each day a different story</h1>
+                </div>
+            </div>
+
+
+            <div class="row text-center buttons-header hidden-xs">
+                <div class="col-sm-4 col-lg-2 col-lg-offset-3">
+                    <a href="#"><button class="btn btn-lg btn-white">See our
+                    daily menu</button></a>
+                </div>
+
+
+                <div class="col-sm-4 col-lg-2">
+                    <a href="#"><button class="btn btn-lg btn-white">Get our
+                    newsletter</button></a>
+                </div>
+
+
+                <div class="col-sm-4 col-lg-2">
+                    <a href="#"><button class="btn btn-lg btn-white">Contact
+                    us</button></a>
+                </div>
+            </div>
+            <!--row closed-->
         </div>
-      </nav>
+        <!--main closed-->
 
-       <div id="main">
+
         <div class="row">
-          <div class="col-lg-12 headline-main hidden-xs">
-            <h1>Each day a different story</h1>
-          </div>
+            <div class="col-lg-4 col-lg-offset-4 text-center" id="quote">
+                <blockquote>
+                    <p>A restaurant offering something different</p>
+
+
+                    <footer>
+                        Vanessa Blake in <cite title=
+                        "Source Title">Foodie</cite>
+                    </footer>
+                    <p>
+                </blockquote>
+            </div>
         </div>
-        <div class="row text-center buttons-header hidden-xs">
-          <div class="col-sm-4 col-lg-2 col-lg-offset-3">
-            <a href="#"><button class="btn btn-lg btn-white">See our daily menu</button></a>
-          </div>
-          <div class="col-sm-4 col-lg-2">
-            <a href="#"><button class="btn btn-lg btn-white">Get our newsletter</button></a>
-          </div>
-          <div class="col-sm-4 col-lg-2">
-             <a href="#"><button class="btn btn-lg btn-white">Contact us</button></a>
-          </div>
-        </div><!--row closed-->
-      </div><!--main closed-->
-      <div class="row">
-        <div id="quote" class="col-lg-4 col-lg-offset-4 text-center">
-          <blockquote>
-            <p>A restaurant offering something different<footer>Vanessa Blake in <cite title="Source Title">Foodie</cite></footer></p>
-          </blockquote>
-        </div>
-      </div>
-      
-      <article>
-      <div class="visible-xs image-xs">
-      </div>
-        <div class="row text-center cards">
-          <div class="col-sm-12 col-md-4 gray-card">
-            <h2>Breakfast</h2>
-              <img class="img-circle" src="images/photo-1.jpg" />
-              <ul>
-                <li>quiches</li>
-                <li>omelettes</li>
-                <li>toasts</li>
-              </ul>
-              <p>Proin condimentum nisl sit amet rutrum pretium. Morbi congue aliquam ipsum ut convallis. </p>
-          </div>
-          <div class="col-sm-12 col-md-4 gray-card">
-            <h2>Lunch</h2>
-            <img class="img-circle" src="images/photo-3.jpg" />
-              <ul>
-                <li>tortillas</li>
-                <li>wok dishes</li>
-                <li>rich salads</li>
-              </ul>
-              <p>Nulla convallis tellus et feugiat porta. Mauris vehicula aliquet arcu at consectetur. Vivamus vitae convallis sapien. </p>
-          </div>
-          <div class="col-sm-12 col-md-4 gray-card">
-            <h2>Dinner</h2>
-            <img class="img-circle" src="images/photo-2.jpg" />
-              <ul>
-                <li>fish dishes</li>
-                <li>steaks</li>
-                <li>sushi</li>
-              </ul>
-              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Vestibulum nunc erat, posuere cursus odio.</p>
-          </div>
-        </div>
-        </article>
+
 
         <article>
-          <div class="row photo-block">
-          </div>
+            <div class="visible-xs image-xs">
+            </div>
+
+
+            <div class="row text-center cards">
+                <div class="col-sm-12 col-md-4 gray-card">
+                    <h2>Breakfast</h2>
+                    <img class="img-circle" src="images/photo-1.jpg">
+
+                    <ul>
+                        <li>quiches</li>
+
+
+                        <li>omelettes</li>
+
+
+                        <li>toasts</li>
+                    </ul>
+
+
+                    <p>Proin condimentum nisl sit amet rutrum pretium. Morbi
+                    congue aliquam ipsum ut convallis.</p>
+                </div>
+
+
+                <div class="col-sm-12 col-md-4 gray-card">
+                    <h2>Lunch</h2>
+                    <img class="img-circle" src="images/photo-3.jpg">
+
+                    <ul>
+                        <li>tortillas</li>
+
+
+                        <li>wok dishes</li>
+
+
+                        <li>rich salads</li>
+                    </ul>
+
+
+                    <p>Nulla convallis tellus et feugiat porta. Mauris vehicula
+                    aliquet arcu at consectetur. Vivamus vitae convallis
+                    sapien.</p>
+                </div>
+
+
+                <div class="col-sm-12 col-md-4 gray-card">
+                    <h2>Dinner</h2>
+                    <img class="img-circle" src="images/photo-2.jpg">
+
+                    <ul>
+                        <li>fish dishes</li>
+
+
+                        <li>steaks</li>
+
+
+                        <li>sushi</li>
+                    </ul>
+
+
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia. Vestibulum nunc erat, posuere
+                    cursus odio.</p>
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+            <div class="row photo-block">
+            </div>
+
+
             <div class="row text-center">
-              <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2>Meet our staff</h2>
-              </div>
-              <div class="col-xs-6 col-sm-3 col-lg-2 col-lg-offset-2 staff">
-                <img class="img-circle" src="images/people-1.jpg" alt="cook"/>
-                <h4>Louisa Cascioli</h4>
-                <caption>Chef de cuisine</caption>
-              </div>
-              <div class="col-xs-6 col-sm-3 col-lg-2 staff">
-                <img class="img-circle" src="images/people-5.jpg" alt="cook"/>
-                <h4>Richard Howers</h4>
-                <caption>Sous chef</caption>
-              </div>
-              <div class="col-xs-6 col-sm-3 col-lg-2 staff">
-                <img class="img-circle" src="images/people-4.jpg" alt="cook"/>
-                <h4>Momo Peterson</h4>
-                <caption>Chef de partie</caption>
-              </div>
-              <div class="col-xs-6 col-sm-3 col-lg-2 staff">
-                <img class="img-circle" src="images/people-2.jpg" alt="cook"/>
-                <h4>Adam Miles</h4>
-                <caption>Chef de partie</caption>
-              </div>
-              <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center">
-                <p>Maecenas vehicula, metus quis dictum vulputate, odio erat volutpat sem, id tristique purus ipsum sed tortor. Suspendisse porta odio at metus laoreet mollis. Vestibulum convallis, metus nec vehicula scelerisque, libero odio laoreet lacus, ut aliquet elit tellus egestas lorem. Vivamus quis fermentum orci. Vivamus ullamcorper sem sit amet enim auctor varius. In risus dolor, lobortis sed feugiat ac, egestas a orci.</p>
-              </div>
-            </div><!--row closed-->
-            </div>
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2>Get our newsletter</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-8 col-xs-offset-2 col-lg-8 col-lg-offset-2 text-center">
-              <form class="form-inline">
-              <div class="form-group">
-                <label for="exampleInputEmail2">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-              </div>
-              <button type="submit" class="btn btn-black">Subscribe</button>
-            </form>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2>Where to find us</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-              <iframe id="map-canvas" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3153.3350519768346!2d-122.40063950000003!3d37.782186999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s795+Folsom+Ave%2C+San+francisco!5e0!3m2!1shr!2shr!4v1433938647195" frameborder="0"></iframe>
-              </div>
-            </div>
-          </article>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>Meet our staff</h2>
+                </div>
 
-          <div id="end">
-            <footer>
-              <div class="row">
-                <div class="hidden-md hidden-xs hidden-sm col-lg-2 col-lg-offset-1">
-                  <img class="logo footer-bits" src="images/octo-logo.png" alt="phog-logo" />
-                </div>
-                <div class="hidden-xs col-sm-4 col-lg-2 text-left footer-bits">
-                  <address>
-                    <strong>The Spicy Octo Restaurant</strong><br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                  </address>
-                </div>
-                <div class="col-xs-4 col-offset-xs-2 col-sm-4 col-offset-sm-2 col-lg-2 col-lg-offset-1 hidden-xs">
-                  <ul>
-                    <li><a href="#"><span class="fa fa-facebook-official"></span> Facebook</a></li>
-                    <li><a href="#"><span class="fa fa-twitter-square"></span> Twitter</a></li>
-                    <li><a href="#"><span class="fa fa-tumblr-square"></span> Tumblr</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12 visible-xs footer-social text-center">
-                  <ul>
-                    <li><a href="#"><span class="fa fa-facebook-official"></span></a></li>
-                    <li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
-                    <li><a href="#"><span class="fa fa-tumblr-square"></span></a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-lg-1 footer-bits text-center button-footer">
-                  <a href="#"><button class="btn btn-sm btn-black">CONTACT US</button></a>
-                </div>
-              </div>
-            </footer>
-          </div>
-    </div><!--container closed-->
-  </body>
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-  <script src="js/bootstrap.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
- </html>
+                <div class="col-xs-6 col-sm-3 col-lg-2 col-lg-offset-2 staff">
+                    <img alt="cook" class="img-circle" src=
+                    "images/people-1.jpg">
+
+                    <h4>Louisa Cascioli</h4>
+
+
+                    <div class="col-xs-6 col-sm-3 col-lg-2 staff">
+                        <img alt="cook" class="img-circle" src=
+                        "images/people-5.jpg">
+
+                        <h4>Richard Howers</h4>
+                    </div>
+
+
+                    <div class="col-xs-6 col-sm-3 col-lg-2 staff">
+                        <img alt="cook" class="img-circle" src=
+                        "images/people-4.jpg">
+
+                        <h4>Momo Peterson</h4>
+                    </div>
+
+
+                    <div class="col-xs-6 col-sm-3 col-lg-2 staff">
+                        <img alt="cook" class="img-circle" src=
+                        "images/people-2.jpg">
+
+                        <h4>Adam Miles</h4>
+                    </div>
+
+
+                    <div class=
+                    "col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center">
+                    <p>Maecenas vehicula, metus quis dictum vulputate, odio
+                    erat volutpat sem, id tristique purus ipsum sed tortor.
+                    Suspendisse porta odio at metus laoreet mollis. Vestibulum
+                    convallis, metus nec vehicula scelerisque, libero odio
+                    laoreet lacus, ut aliquet elit tellus egestas lorem.
+                    Vivamus quis fermentum orci. Vivamus ullamcorper sem sit
+                    amet enim auctor varius. In risus dolor, lobortis sed
+                    feugiat ac, egestas a orci.</p>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 text-center">
+                            <h2>Get our newsletter</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class=
+                        "col-xs-8 col-xs-offset-2 col-lg-8 col-lg-offset-2 text-center">
+                        <form class="form-inline">
+                                <div class="form-group">
+                                    <label for=
+                                    "exampleInputEmail2">Email</label>
+                                    <input class="form-control" id=
+                                    "exampleInputEmail2" placeholder=
+                                    "jane.doe@example.com" type="email">
+                                </div>
+                                <button class="btn btn-black" type=
+                                "submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 text-center">
+                            <h2>Where to find us</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <iframe frameborder="0" id="map-canvas" name=
+                            "map-canvas" src=
+                            "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3153.3350519768346!2d-122.40063950000003!3d37.782186999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s795+Folsom+Ave%2C+San+francisco!5e0!3m2!1shr!2shr!4v1433938647195">
+                            </iframe>
+                        </div>
+                    </div>
+
+
+                    <div id="end">
+                        <footer>
+                            <div class="row">
+                                <div class=
+                                "hidden-md hidden-xs hidden-sm col-lg-2 col-lg-offset-1">
+                                <img alt="phog-logo" class="logo footer-bits"
+                                src="images/octo-logo.png">
+                                </div>
+
+
+                                <div class=
+                                "hidden-xs col-sm-4 col-lg-2 text-left footer-bits">
+                                <address>
+                                        <strong>The Spicy Octo
+                                        Restaurant</strong><br>
+                                        795 Folsom Ave, Suite 600<br>
+                                        San Francisco, CA 94107<br>
+                                        <abbr title="Phone">P:</abbr> (123)
+                                        456-7890
+                                    </address>
+                                </div>
+
+
+                                <div class=
+                                "col-xs-4 col-offset-xs-2 col-sm-4 col-offset-sm-2 col-lg-2 col-lg-offset-1 hidden-xs">
+                                <ul>
+                                        <li>
+                                            <a href="#"><span class=
+                                            "fa fa-facebook-official"></span>
+                                            Facebook</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="#"><span class=
+                                            "fa fa-twitter-square"></span>
+                                            Twitter</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="#"><span class=
+                                            "fa fa-tumblr-square"></span>
+                                            Tumblr</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <div class=
+                                "col-xs-12 visible-xs footer-social text-center">
+                                <ul>
+                                        <li>
+                                            <a href="#"><span class=
+                                            "fa fa-facebook-official"></span></a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="#"><span class=
+                                            "fa fa-twitter-square"></span></a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="#"><span class=
+                                            "fa fa-tumblr-square"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <div class=
+                                "col-xs-12 col-sm-3 col-lg-1 footer-bits text-center button-footer">
+                                <a href="#"><button class=
+                                "btn btn-sm btn-black">CONTACT US</button></a>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+
+
+                    <table>
+                        <caption>
+                            Chef de cuisine
+                        </caption>
+
+
+                        <caption>
+                            Sous chef
+                        </caption>
+
+
+                        <caption>
+                            Chef de partie
+                        </caption>
+
+
+                        <caption>
+                            Chef de partie
+                        </caption>
+                        <!--row closed-->
+                        <!--container closed-->
+                    </table>
+                    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> <script src="js/bootstrap.min.js"></script> <script src="https://maps.googleapis.com/maps/api/js"></script>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
