@@ -152,6 +152,9 @@ blockquote {
   .staff h4 {
     margin-bottom: 0; }
 
+.staff span {
+  font-size: 14px; }
+
 #map-canvas {
   width: 100%;
   height: 450px;
